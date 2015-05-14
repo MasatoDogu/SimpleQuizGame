@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+
+<head>
+<title>演習問題1</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+<script type="text/javascript">
+<!--
+var image_num = 1;
+
+function goNext() {
+	if (image_num<=3) {
+		image_num++;
+		document.getElementById("image").src = "images/" + image_num + ".jpg";
+	}
+}
+
+function goBack() {
+	if (image_num>=2) {
+		image_num--;
+		document.getElementById("image").src = "images/" + image_num + ".jpg";
+	}
+}
+//-->
+</script>
+</head>
+
+<body>
+
+<h1>演習問題1</h1>
+
+<div>
+	<img src="images/1.jpg" id="image" alt="number">
+	<br>
+	<input type="button" value="前へ" onClick="goBack()"> 
+	<input type="button" value="次へ" onClick="goNext()"> 
+</div>
+
+</body>
+</html>

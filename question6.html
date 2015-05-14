@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>クイズ!情報ネットワーク</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+<script type="text/javascript" src="question6.js">
+
+
+
+</script>
+</head>
+
+<body>
+<h3>第6問目</h3>
+プロトコルの階層化とは、通信の決まりごと（プロトコル）を分類し、階層化することである。</br>
+各層は上下層の協力を得て各々の役割を果たす。OSI(Open Systems Interconnection)参照モデル、</br>
+通称、7レイヤモデルについて空欄を答えよ。</br>
+<b>端末:物理層→データリンク層→ネットワーク層→□→セッション層→プレゼンテーション層→アプリケーション層</b>
+	<form id="radio_form1">
+		 <br />
+		 <input type = "radio" id="choice0" value="超高速" name="question2" />1:&nbsp;セグメンテーション層
+		 <input type = "radio" id="choice1" value="大容量" name="question2"  />2:&nbsp;デジタル層
+		 </br></br>
+		 <input type = "radio" id="choice2" value="オープンなインターフェース" name="question2"  />3:&nbsp;トランスポート層
+		 <input type = "radio" id="choice3" value="ウェアラブル" name="question2" />4:&nbsp;アドミッション層
+	</form>
+
+	<input type="button" value="FINAL ANSWER" onClick="answer3()">
+	<input type="button" value="DROP OUT" onClick="dropout3()">
+	<input type="button" id="hide" value="AUDIENCE" onClick="load();hide()">
+	<input type="button" id="hide1" value="50-50" onClick="fiftyfifty();hide1()">
+
+	</br><br />
+	<img id="tmp"> 
+</body>
+</html>

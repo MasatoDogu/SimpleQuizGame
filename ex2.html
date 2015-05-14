@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+
+<head>
+<title>演習問題2</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+<script type="text/javascript">
+<!--
+function showImages() {
+	var listbox = document.getElementById("listbox");
+	for (i = 0; i < listbox.length; i++) {
+		var img = listbox.options[i];
+		if (img.selected) {
+			document.getElementById("image"+[i]).style.visibility="visible";
+		} else {
+			document.getElementById("image"+[i]).style.visibility="hidden";
+		}
+	}
+}
+//-->
+</script>
+</head>
+
+<body>
+
+<h1>演習問題2</h1>
+
+<div>
+	<select id="listbox" onClick="showImages()" size="4" multiple>
+	  <option value="value1">画像1</option>
+	  <option value="value2">画像2</option>
+	  <option value="value3">画像3</option>
+	  <option value="value3">画像4</option>
+	</select>
+
+	<img src="images/1.jpg" id="image0" style="visibility:hidden" alt="number1">
+	<img src="images/2.jpg" id="image1" style="visibility:hidden" alt="number2">
+	<img src="images/3.jpg" id="image2" style="visibility:hidden" alt="number3">
+	<img src="images/4.jpg" id="image3" style="visibility:hidden" alt="number4">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>クイズ!情報マイスター初級</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+<link rel="stylesheet" type="text/css" href="game1.css">
+<script type="text/javascript">
+
+function start() {
+	 ret = confirm("問題が始まります。準備は宜しいですか？");
+  if (ret == true){
+    location.href = "question1.html";
+  }
+}
+
+
+
+</script>
+</head>
+
+<body>
+<h1>クイズ！情報マイスター初級</h1>
+<h3>ルール</h3>
+このゲームは<b>情報ネットワーク</b>に関する基礎知識の4択クイズに答えていくことで、
+賞金獲得を目指すものである。問題は全部で<font class="attention">10問</font>。</br>
+不正解ならその時点でゲーム終了となってしまう。
+<h4>ただし！</h4><b>挑戦者のお助けアイテムとして、<font class="attention1">「Audience」</font>と<font class="attention1">「50-50」</font>が用意されているぞ。</b></br></br>
+<font class="attention1">「Audience」</font>は、その問題に対する理工系学生100人の回答のグラフを教えてくれる。</br>
+<font class="attention1">「50-50」</font>は、4つの選択肢の中からコンピューターが二つに絞ってくれる。</br></br>
+繰り返すが、<font class="attention">間違えるとそこでゲームオーバー</font>だから、少しでも危なかったら積極的にアイテムを使うことをお勧めする。</br>
+<h4>では、始めよう！</h4>
+
+
+<input type="button" value="挑戦する" onClick="start()">
+
+
+
+
+</body>
+</html>
+

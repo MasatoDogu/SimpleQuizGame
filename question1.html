@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>クイズ!情報ネットワーク</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+<script type="text/javascript" src="question1.js">
+</script>
+
+
+</head>
+
+<body>
+<h3>第1問目</h3>
+ムーアの法則とは、「1.5年でトランジスタの集積度が2倍になる」という法則であるが</br>
+1971年のトランジスタ数が2300個だとすれば、2011年のトランジスタ数はいくつか？
+	<form id="radio_form1">
+		 <br />
+		 <input type = "radio" id="choice0" value="5億個" name="question1" />1:&nbsp;5億個
+		 <input type = "radio" id="choice1" value="10億個" name="question1"  />2:&nbsp;10億個
+		 <input type = "radio" id="choice2" value="1億個" name="question1"  />3:&nbsp;1億個
+		 <input type = "radio" id="choice3" value="100億個" name="question1" />4:&nbsp;100億個
+	</form>
+
+	<input type="button" value="FINAL ANSWER" onClick="answer1()">
+	<input type="button" value="DROP OUT" onClick="dropout1()">
+	<input type="button" id="hide" value="AUDIENCE" onClick="load();hide()">
+	<input type="button" id="hide1" value="50-50" onClick="fiftyfifty();hide1()">
+
+	</br><br />
+	<img id="tmp"> 
+</body>
+</html>

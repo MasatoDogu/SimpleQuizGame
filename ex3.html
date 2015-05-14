@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>演習課題3</title>
+<script type="text/javascript">
+<!--
+var array= ["1.jpg","2.jpg","3.jpg","4.jpg"];
+function shuffle() {
+	array.sort(
+    		function() {
+        			return Math.random() - 0.5;
+    		}
+	);
+	
+	for (i = 0; i < array.length; i++) {
+		var img = document.getElementById("image"+i).src=  "images/" + array[i];
+	}
+}
+
+//-->
+</script>
+</head>
+
+<body>
+
+<h1>演習課題3</h1>
+
+<img src="images/1.jpg" id="image0"  alt="number1">
+<img src="images/2.jpg" id="image1"  alt="number2">
+<img src="images/3.jpg" id="image2"  alt="number3">
+<img src="images/4.jpg" id="image3"  alt="number4"> 
+<br>
+<input type="button" value="並び替え" onClick="shuffle()" >
+
+
+</body>
+</html>
